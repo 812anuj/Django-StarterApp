@@ -1,0 +1,7 @@
+uv venv venv  
+./venv/Scripts/activate
+create requirements.txt 
+uv python pip freeze > requirements.txt   
+django-admin startproject core_a .
+python manage.py migrate
+python manage.py startapp home  
